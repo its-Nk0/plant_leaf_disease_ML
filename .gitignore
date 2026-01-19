@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+
+# Uploads
+uploads/
+uploadimages/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# Models - Large files (over 25MB), exclude from Git
+models/*.keras
+models/*.h5
+models/*.pkl
+models/*.pth
+models/*.onnx
+*.keras
+*.h5
+*.pkl
+*.pth
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+# Keep .env.example as template
+!.env.example
+
+# Logs
+*.log
