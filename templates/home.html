@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 Plant Disease Detection</h1>
+            <p class="subtitle">Upload a leaf image to detect plant diseases using AI</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-box" id="uploadBox">
+                    <div class="upload-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <h3>Click to upload or drag and drop</h3>
+                        <p>PNG, JPG, JPEG up to 16MB</p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </div>
+                </div>
+                
+                <button id="predictBtn" class="btn btn-primary" disabled>
+                    🔍 Detect Disease
+                </button>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <h2>Prediction Result</h2>
+                    
+                    <div class="image-preview">
+                        <img id="previewImage" src="" alt="Uploaded leaf">
+                    </div>
+                    
+                    <div class="prediction-info">
+                        <div class="disease-name" id="diseaseName"></div>
+                        <div class="confidence-bar">
+                            <div class="confidence-label">Confidence</div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="confidenceBar"></div>
+                            </div>
+                            <div class="confidence-value" id="confidenceValue"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="resetBtn" class="btn btn-secondary">
+                    🔄 Analyze Another Image
+                </button>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing image...</p>
+            </div>
+
+            <div class="error" id="error" style="display: none;"></div>
+        </main>
+
+        <footer>
+            <p>Built with Flask & Machine Learning</p>
+            <p class="health-status" id="healthStatus">Checking server status...</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
