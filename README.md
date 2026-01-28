@@ -3,14 +3,14 @@
 
 A beginner-friendly web application that detects plant diseases from leaf images using Flask.
 
-## ✨ Features
+## Features
 
-- 🖼️ Easy image upload (drag & drop)
-- 🤖 AI-powered disease detection
-- 📊 Visual confidence scores
-- 🎨 Beautiful, modern UI
+- Easy image upload (drag & drop)
+-  AI-powered disease detection
+- Visual confidence scores
+- Beautiful, modern UI
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -30,11 +30,11 @@ python app.py
 
 Go to: **http://localhost:5000**
 
-That's it! 🎉
+That's it! 
 
 **Note:** The app uses mock predictions for demonstration. To use a real model, train one and save it as `models/plant_disease_model.h5`
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Start the Flask Server
 
@@ -51,7 +51,7 @@ Open your web browser and go to:
 http://localhost:5000
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 plant_Diease/
@@ -69,7 +69,7 @@ plant_Diease/
 └── uploads/           # Uploads (auto-created)
 ```
 
-## 🎯 How to Use
+## How to Use
 
 1. **Upload an Image**
    - Click the upload box or drag & drop an image
@@ -77,14 +77,14 @@ plant_Diease/
    - Max file size: 16MB
 
 2. **Get Prediction**
-   - Click "🔍 Detect Disease" button
+   - Click " Detect Disease" button
    - Wait for the AI to analyze the image
    - View the results with confidence score
 
 3. **Try Another**
    - Click "🔄 Analyze Another Image" to reset
 
-## 🔧 Configuration
+## Configuration
 
 **Change Port:**
 ```bash
@@ -96,7 +96,7 @@ python app.py
 **Production Mode:**
 The app uses `gunicorn` for production. See `Procfile` for configuration.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Port in use?** Use a different port: `$env:PORT=8080`
 
@@ -104,7 +104,7 @@ The app uses `gunicorn` for production. See `Procfile` for configuration.
 
 **Import errors?** Make sure dependencies are installed: `pip install -r requirements.txt`
 
-## 🚢 Deployment
+##  Deployment
 
 Ready to deploy! The project includes:
 - `Procfile` for Heroku
@@ -115,5 +115,5 @@ Deploy to Heroku, Railway, Render, or any WSGI-compatible platform.
 
 ---
 
-**Made with ❤️ for beginners**
+**Made  by  Nk **
 #
