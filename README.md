@@ -1,5 +1,5 @@
 
-# 🌿 Plant Disease Detection
+#  Plant Disease Detection
 
 A beginner-friendly web application that detects plant diseases from leaf images using Flask.
 
